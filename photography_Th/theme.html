@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="theme.css" rel="stylesheet">
+<body>
+    <div class="navbar">
+        <div class="logo">DA<br>AD</div>
+        <div class="menu">
+            <ul>
+                <li><a href="#form">Account</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="class.html">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a id="a"href="#">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var i=0;
+        var images=[];
+        var time=5000;
+        //image list
+        images[0]="/Users/dipakadhikari/Documents/black white images for theme/bck1.webp";
+        images[1]="/Users/dipakadhikari/Documents/black white images for theme/bck123.jpeg";
+        images[2]="/Users/dipakadhikari/Documents/black white images for theme/bck12.webp";
+    
+        //change image
+        function change(){
+            document.slide.src=images[i];
+            if(i <images.length-1){
+                i++;
+            } else{
+                i=0;
+            }
+            setTimeout("change()",time);
+        }
+        window.onload=change;
+    </script>
+    <img width="100%" height="660px"name="slide">
+    <div class="quote">
+        <h1 id="cap">C</h1>
+        <h2 id="tag">onceive<br>reate<br>apture</h2>
+         <div class="border">
+         </div> <a id="ex" href="#services">---------Click to Explore</a>
+    </div>
+    <div class="hnav">
+        <h4 id="follow">Follow me on------------></h4>
+        <ul>
+            <li><a href="https://www.facebook.com/dipu.adhikari.90260"><img src="/Users/dipakadhikari/Documents/png and svg files/fb.png"></a></li>
+            <li><a href=""><img src="/Users/dipakadhikari/Documents/png and svg files/mess.png"></a></li>
+            <li><a href=""><img src="/Users/dipakadhikari/Documents/png and svg files/twit.png"></a></li>
+            <li><a href="https://www.instagram.com/neutron_20211/"><img src="/Users/dipakadhikari/Documents/png and svg files/ins.png"></a></li>
+        </ul>
+    </div>
+    
+    <div class="container1">
+        <h1 id="services">Our Services</h1>
+    <div class="services">
+        <div class="sec">
+            <img src="/Users/dipakadhikari/Documents/png and svg files/photo.svg">
+            <p><h4>Photography</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, eros non feugiat
+                 tincidunt, purus dolorlobortis tellus, ac feugiatnisi massa eu nisl. Ut sagittis at ex ...<a href="#">Read more</a></p>
+        </div>
+        <div class="sec">
+            <img src="/Users/dipakadhikari/Documents/png and svg files/video.svg">
+            <p><h4>Videography</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, eros non feugiat
+                 tincidunt, purus dolorlobortis tellus, ac feugiat nisi massa eu nisl. Ut sagittis at ex ...<a href="#">Read more</a></p>
+        </div>
+        <div class="sec">
+            <img src="/Users/dipakadhikari/Documents/png and svg files/shop.svg">
+            <p><h4>Photoshop</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit, eros non feugiat
+                 tincidunt, purus dolorlobortis tellus, ac feugiat nisi massa eu nisl. Ut sagittis at ex ...<a href="#">Read more</a></p>
+        </div>
+        <div class="sec">
+            <img src="/Users/dipakadhikari/Documents/png and svg files/motion.svg">
+            <p><h4>Motion Design</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eros non feugiat
+                 tincidunt, purus dolorlobortis tellus, ac feugiat nisi massa eu nisl. Ut sagittis at ex ...<a href="#">Read more</a></p>
+        </div>
+        <div class="sec">
+            <img src="/Users/dipakadhikari/Documents/png and svg files/grap.svg">
+            <p><h4>Graphics Design</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit eros non feugiat
+                 tincidunt, purus dolorlobortis tellus, ac feugiat nisi massa eu nisl. Ut sagittis at ex ...<a href="#">Read more</a></p>
+        </div>
+        <div class="sec">
+            <img src="/Users/dipakadhikari/Documents/png and svg files/pdf.svg">
+            <p><h4>Courses and Pdf</h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit,eros non feugiat
+                 tincidunt, purus dolorlobortis tellus, ac feugiat nisi massa eu nisl. Ut sagittis at ex ...<a href="#">Read more</a></p>
+        </div>
+    </div>
+    </div>
+        <div class="picture">
+            <img src="/Users/dipakadhikari/Documents/black white images for theme/form.jpeg">
+        <div class="form">
+            <h1 id="form">Registration form</h1>
+            <div class="input">
+                <form method="post" action="">
+                 <input type="text"  name="fname" placeholder="First Name"  id=""> <input type="text" name="lname" placeholder="Lastname"id=""><br>
+                 <input type="text" name="email" placeholder="Email" id=""> <input type="text" name="phone" placeholder="Phone Number"><br> 
+                 <input type="password" name="pass" placeholder="Password"  id=""> <input type="password" placeholder="Conform Password" name="cpas"id=""><br><br>
+                 <input type="checkbox"><b>I agree to the terms and privacy policies of the website listed</b>
+                 <input type="submit" onlick="" value="Submit">
+                </form>
+             </div>
+      </div>
+        </div>
+    <div class="footer">
+        <div class="company">
+            <p>Company</p>
+            <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Our services</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Affiliate Programs</a></li>
+            </ul>
+        </div>
+        <div class="company">
+            <p>Get Help</p>
+            <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Subcription</a></li>
+                <li><a href="">Payment Option</a></li>
+                <li><a href="">Report</a></li>
+            </ul>
+        </div>
+        <div class="company">
+            <p>Connect</p>
+            <ul>
+                <li><a href="">Watch</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Article</a></li>
+                <li><a href="">Podcast</a></li>
+            </ul>
+        </div>
+        <div class="company">
+            <p>Contact</p>
+            <ul>
+                <li><a  src=""href="">Phone:+977 9840434557</a></li>
+                <li><a  src=""href="">Email:Adhikari.deepak5566@gmail.com</a></li>
+                <li><a src="" href="">Git:https://github.com/DipakAdhikari/DipakAdhikari.git</a></li>
+                <li><a  src=""href=""></a>Address:New baneshwor ,Kathmandu</li>
+                <a id="contact"></a>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
